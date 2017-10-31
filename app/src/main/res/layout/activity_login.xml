@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.prima.projectlaravelpresales.LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:layout_editor_absoluteX="170dp"
+        android:layout_marginTop="109dp"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginactivityediitextemail"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginactivityediitextpassword"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_below="@+id/loginactivityediitextemail"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginactivitybuttonlogin"
+        android:text="Login"
+
+        android:layout_below="@+id/simpleProgressBar"
+        android:layout_alignParentStart="true" />
+
+    <ProgressBar
+        android:id="@+id/simpleProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_below="@+id/loginactivityediitextpassword"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

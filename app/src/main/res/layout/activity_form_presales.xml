@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.prima.projectlaravelpresales.FormPresales">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PRESALE"
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView7" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/presaleactivityRadioGruop"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentEnd="true">
+
+        <RadioButton
+            android:id="@+id/presalesCheckBoxCedit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/presaleactivityEdittextOTR"
+            android:layout_alignParentEnd="true"
+            android:text="Credit" />
+
+        <RadioButton
+            android:id="@+id/presalesCheckBoxCash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/presalesCheckBoxCedit"
+            android:layout_alignBottom="@+id/presalesCheckBoxCedit"
+            android:layout_toStartOf="@+id/presalesCheckBoxCedit"
+            android:text="Cash" />
+
+
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment "
+        android:id="@+id/textView8"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/presaleactivityEdittextOTR"
+        android:hint="OTR"
+        android:layout_below="@+id/presaleactivityRadioGruop"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/presaleactivityEdittextUangMuka"
+        android:hint="Uang Muka"
+        android:inputType="number"
+        android:layout_below="@+id/presaleactivityEdittextOTR"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/presaleactivityEdittextDiscount"
+        android:inputType="number"
+        android:hint="Discount"
+        android:layout_below="@+id/presaleactivityEdittextUangMuka"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/presaleactivityEdittextLeasing"
+        android:hint="Leasing"
+        android:layout_below="@+id/presaleactivityEdittextDiscount"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Angsuran"
+        android:id="@+id/presaleactivityEdittextAngsuran"
+        android:layout_below="@+id/presaleactivityEdittextLeasing"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/presaleactivityEdittextTenor"
+        android:hint="Tenor"
+        android:layout_below="@+id/presaleactivityEdittextAngsuran"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/presaleactivityEdittextProgram"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Program"
+        android:layout_below="@+id/presaleactivityEdittextTenor"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/presaleactivityButtonNext"
+        android:text="Next"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

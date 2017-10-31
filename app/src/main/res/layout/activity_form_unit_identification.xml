@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.prima.projectlaravelpresales.FormUnitIdentification">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="Unit Identification"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView4" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stock Motor"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView5" />
+    <Spinner
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/unitidentificationSpinner"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true"></Spinner>
+
+    <Button
+        android:id="@+id/unitidentificationButtonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="NEXT" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Keterangan = "
+        android:layout_below="@+id/unitidentificationSpinner"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView6" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/unitidentificationTxtCodeStock"
+        android:text="CodeStock"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/unitidentificationTxtname"
+        android:text="name"
+        android:layout_below="@+id/unitidentificationTxtCodeStock"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/unitidentificationTxtColour"
+        android:text="Colour"
+        android:layout_below="@+id/unitidentificationTxtname"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/unitidentificationTxtmachineno"
+        android:text="MachineNo"
+        android:layout_below="@+id/unitidentificationTxtColour"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/unitidentificationTxtFrameno"
+        android:text="FrameNo"
+        android:layout_below="@+id/unitidentificationTxtmachineno"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.prima.projectlaravelpresales.FormBuyerIdentificationActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buyer Indentification Form"
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView2" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buyeridentificationtextviewNIK"
+        android:hint="NIK"
+        android:inputType="number"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buyeridentificationtextviewNama"
+        android:hint="Nama"
+        android:layout_below="@+id/buyeridentificationtextviewNIK"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buyeridentificationtextviewTelepon"
+        android:hint="Telepon"
+        android:inputType="number"
+        android:layout_below="@+id/buyeridentificationtextviewNama"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kota / Kabupaten"
+        android:id="@+id/buyeridentificationtextviewKotaKabupaten"
+        android:layout_below="@+id/buyeridentificationtextviewTelepon"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="next"
+        android:id="@+id/buyeridentificationButtonNext"
+        android:layout_below="@+id/buyeridentificationtextviewKotaKabupaten"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
